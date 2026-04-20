@@ -1,4 +1,4 @@
-# EU-AI-Governance-RAG-complianceGPT
+# Européen-AI-Governance-RAG-complianceGPT
 
 <div align="center">
   <img src="https://img.shields.io/badge/Python-3.12-38bdf8?style=flat-square&logo=python&logoColor=white" />
