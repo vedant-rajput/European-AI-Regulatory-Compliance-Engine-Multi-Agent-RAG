@@ -104,5 +104,5 @@ Notice a compliance update drop midway through the day? Bypass terminal restarts
 ---
 
 <p align="center">
-  <i>Developed for the Kaggle AI Assistants & Enterprise Engineering Hackathon.</i>
+  <i>Created by Vedant, Developed for the Kaggle AI Assistants & Enterprise Engineering Hackathon.</i>
 </p>
