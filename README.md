@@ -14,7 +14,7 @@
 
 ---
 
-## 🌟 Features
+## Features
 
 - **Hybrid Search Engine:** Combines Qdrant vector semantic search (OpenAI `text-embedding-3-small`) with BM25 keyword search, fused via Reciprocal Rank Fusion (RRF).
 - **Multi-Agent Pipeline:** Seamlessly delegates between three dedicated async agents (Internal Researcher, External DuckDuckGo Fact-Checker, and Synthesizer) inside the Gradio UI. 
@@ -24,7 +24,7 @@
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```mermaid
 graph TD
@@ -50,7 +50,7 @@ graph TD
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 The entire codebase has been fully containerized and streamlined for instant deployment.
 
@@ -81,9 +81,10 @@ docker compose exec backend python -m scripts.index_data
 
 ---
 
-## 🎛️ Usage Guide
+## Usage Guide
 
 ### Agentic Mode (Web Fact-Checking)
+
 1. Open up **http://localhost:7860** on your browser.
 2. Tick the **Enable Agentic Workflow** checkbox in the sidebar.
 3. Fire a question. The pipeline will synthetically retrieve framework compliance definitions from your local PDFs, dispatch an external MCP proxy to cross-validate against DuckDuckGo, and combine both perspectives while attributing precise PDF source pages.
@@ -96,7 +97,8 @@ Notice a compliance update drop midway through the day? Bypass terminal restarts
 
 ---
 
-## 🛡️ Engineering Standards
+## Engineering Standards
+
 - **CI/CD Quality:** Enforced robust `pytest` pipelines and `ruff` linting across GitHub Actions on every Pull Request.
 - **Log Telemetry:** Console prints have been entirely replaced by a thread-safe rotating `app/logger.py` module generating localized `app.log` files securely managed on the host through Docker Volumes.
 - **Concurrency & Scaling:** The local JSON FAISS indexing script was deprecated and completely rewritten as an ephemeral script backing up natively into a stable Qdrant Container designed natively to handle highly concurrent requests across the UI. 
